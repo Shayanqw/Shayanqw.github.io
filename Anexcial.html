@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anexcial | Project Details</title>
+    <link rel="shortcut icon" href="./assets/images/portfoliof.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            color: var(--light-gray);
+        }
+
+        .project-page {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 15px 80px;
+        }
+
+        .project-article {
+            display: block;
+            padding: 24px;
+        }
+
+        .project-hero {
+            display: grid;
+            gap: 24px;
+            margin-top: 10px;
+        }
+
+        .project-copy p,
+        .project-copy li {
+            color: var(--light-gray);
+            font-size: var(--fs-6);
+            line-height: 1.8;
+        }
+
+        .project-copy p + p,
+        .project-section + .project-section {
+            margin-top: 24px;
+        }
+
+        .project-section h3 {
+            margin-bottom: 12px;
+            color: var(--white-2);
+        }
+
+        .project-section ul {
+            display: grid;
+            gap: 10px;
+            padding-left: 18px;
+        }
+
+        .project-section li {
+            list-style: disc;
+        }
+
+        .project-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .project-link-btn,
+        .slider-btn {
+            position: relative;
+            background: var(--border-gradient-onyx);
+            border-radius: 14px;
+            color: var(--white-2);
+            font-size: var(--fs-6);
+            font-weight: var(--fw-500);
+            padding: 12px 18px;
+            box-shadow: var(--shadow-1);
+            transition: transform var(--transition-1), color var(--transition-1);
+        }
+
+        .project-link-btn::before,
+        .slider-btn::before {
+            content: "";
+            position: absolute;
+            inset: 1px;
+            border-radius: inherit;
+            background: var(--bg-gradient-jet);
+            z-index: -1;
+        }
+
+        .project-link-btn:hover,
+        .slider-btn:hover,
+        .project-link-btn:focus,
+        .slider-btn:focus {
+            color: var(--orange-yellow-crayola);
+            transform: translateY(-2px);
+        }
+
+        .slider-card {
+            position: relative;
+            background: var(--border-gradient-onyx);
+            border-radius: 20px;
+            padding: 18px;
+            box-shadow: var(--shadow-2);
+            overflow: hidden;
+        }
+
+        .slider-card::before {
+            content: "";
+            position: absolute;
+            inset: 1px;
+            background: var(--bg-gradient-jet);
+            border-radius: inherit;
+            z-index: -1;
+        }
+
+        .slider-frame {
+            position: relative;
+            aspect-ratio: 16 / 10;
+            border-radius: 16px;
+            overflow: hidden;
+            background: var(--eerie-black-1);
+        }
+
+        .slider-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+        }
+
+        .slider-frame img.active {
+            display: block;
+            animation: fade 0.4s ease;
+        }
+
+        .slider-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .slider-status {
+            color: var(--white-2);
+            font-size: var(--fs-6);
+            text-align: center;
+            min-width: 92px;
+        }
+
+        .slider-dots {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 16px;
+            flex-wrap: wrap;
+        }
+
+        .slider-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 999px;
+            background: var(--jet);
+            transition: background var(--transition-1), transform var(--transition-1);
+        }
+
+        .slider-dot.active {
+            background: var(--orange-yellow-crayola);
+            transform: scale(1.1);
+        }
+
+        .project-summary {
+            background: var(--onyx);
+            border: 1px solid var(--jet);
+            border-radius: 16px;
+            padding: 18px;
+        }
+
+        .project-summary p {
+            margin: 0;
+        }
+
+        @media (min-width: 992px) {
+            .project-hero {
+                grid-template-columns: 1.15fr 0.85fr;
+                align-items: start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<main class="project-page">
+    <article class="project-article">
+        <div class="project-actions">
+            <a class="project-link-btn" href="./index.html">Back to Portfolio</a>
+        </div>
+
+        <header>
+            <h1 class="h2 article-title">Anexcial</h1>
+        </header>
+
+        <section class="project-hero">
+            <div class="slider-card">
+                <div class="slider-frame" aria-live="polite">
+                    <img class="active" src="./assets/images/Anexcial1.png" alt="Anexcial project screenshot 1" data-slide>
+                    <img src="./assets/images/Anexcial2.png" alt="Anexcial project screenshot 2" data-slide>
+                    <img src="./assets/images/Anexcial3.png" alt="Anexcial project screenshot 3" data-slide>
+                    <img src="./assets/images/Anexcial4.png" alt="Anexcial project screenshot 4" data-slide>
+                    <img src="./assets/images/Anexcial5.png" alt="Anexcial project screenshot 5" data-slide>
+                    <img src="./assets/images/Anexcial6.png" alt="Anexcial project screenshot 6" data-slide>
+                </div>
+
+                <div class="slider-controls">
+                    <button class="slider-btn" type="button" data-prev-slide>Previous</button>
+                    <div class="slider-status" data-slider-status>1 / 6</div>
+                    <button class="slider-btn" type="button" data-next-slide>Next</button>
+                </div>
+
+                <div class="slider-dots" aria-label="Slide navigation">
+                    <button class="slider-dot active" type="button" aria-label="Go to slide 1" data-slide-dot></button>
+                    <button class="slider-dot" type="button" aria-label="Go to slide 2" data-slide-dot></button>
+                    <button class="slider-dot" type="button" aria-label="Go to slide 3" data-slide-dot></button>
+                    <button class="slider-dot" type="button" aria-label="Go to slide 4" data-slide-dot></button>
+                    <button class="slider-dot" type="button" aria-label="Go to slide 5" data-slide-dot></button>
+                    <button class="slider-dot" type="button" aria-label="Go to slide 6" data-slide-dot></button>
+                </div>
+            </div>
+
+            <div class="project-copy">
+                <div class="project-summary">
+                    <p>
+                        Anexcial is a full-stack Django web app for an invite-only customer loyalty platform aimed at neighbourhood businesses like cafes and small retail stores. The product combines a marketing site, a role-based loyalty system, store operations tooling, and an internal admin or operations hub.
+                    </p>
+                </div>
+
+                <p>
+                    The core idea is to make loyalty feel more premium and controlled than a typical public points app by using curated store onboarding, invite-only member access, QR-based member identification, and an auditable points ledger.
+                </p>
+
+                <p>
+                    This project highlights full-stack product thinking across customer experience, operations, platform trust, and secure back-office workflows.
+                </p>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h3 class="h3">What the project does</h3>
+            <ul>
+                <li>Public-facing marketing site with home, pricing, consultation, catalog, FAQ, privacy, and terms pages.</li>
+                <li>Invite-based member registration, where customers join using store-issued invite codes.</li>
+                <li>Store account onboarding, including review workflow for approval or rejection.</li>
+                <li>Member dashboard showing store cards, point balances, reward thresholds, reward eligibility, and transaction history.</li>
+                <li>QR-based member identity flow, where each member gets a UUID-backed QR code.</li>
+                <li>Store dashboard for scanning member QR payloads, awarding points, redeeming points, managing catalog items, and issuing invites.</li>
+                <li>Admin operations hub for managing users, stores, invite codes, member activity by store, consultation leads, and onboarding requests.</li>
+                <li>Health and readiness endpoints for operational monitoring: <code>/healthz/</code> and <code>/readyz/</code>.</li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h3 class="h3">Core business features</h3>
+            <ul>
+                <li>Invite lifecycle with database-backed codes, activation flags, expiration, max usage limits, and usage tracking.</li>
+                <li>Store-specific item catalog where each item has a server-defined point value.</li>
+                <li>Points ledger with award and redeem transaction types.</li>
+                <li>Reward redemption based on store-defined thresholds and reward labels.</li>
+                <li>Duplicate-scan fraud protection to prevent immediate repeated awards.</li>
+                <li>Role-aware routing for members, store staff, and admins.</li>
+                <li>Consultation lead capture for sales-assisted onboarding and plan selection.</li>
+                <li>Multi-plan pricing structure: Starter, Growth, Pro, and Enterprise.</li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h3 class="h3">Tech stack</h3>
+            <ul>
+                <li>Backend: Python, Django 5.</li>
+                <li>Database: SQLite for local development, optional PostgreSQL in production.</li>
+                <li>Frontend: Django templates, HTML, CSS, vanilla JS.</li>
+                <li>Imaging: <code>qrcode</code> plus Pillow for QR generation.</li>
+                <li>Auth: Django auth system with user roles via <code>is_staff</code>, <code>is_superuser</code>, and groups.</li>
+                <li>Testing: Django test suite.</li>
+                <li>Deployment and security readiness: environment-based settings, secure cookie flags, HSTS, CSRF trusted origins, and logging config.</li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h3 class="h3">Architecture highlights</h3>
+            <ul>
+                <li>Data models include Store, MemberProfile, StoreItem, PointsTransaction, InviteCode, StoreOnboardingRequest, and ConsultationLead.</li>
+                <li>Business logic is mostly handled in Django views with role checks, atomic database transactions, and server-side validation.</li>
+                <li>Marketing content is centralized in <code>app/marketing.py</code>.</li>
+                <li>Shared marketing and navigation context is injected through <code>app/context_processors.py</code>.</li>
+                <li>Security and environment config live in <code>project/settings.py</code>.</li>
+                <li>Route structure is defined in <code>project/urls.py</code>.</li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h3 class="h3">Project vision</h3>
+            <p>
+                The vision for Anexcial is to give neighbourhood businesses a more premium and controlled loyalty experience than a typical open points app. Instead of generic public enrollment, the platform focuses on curated store onboarding, invite-only customer access, operational oversight, and trust-first member rewards.
+            </p>
+        </section>
+
+        <section class="project-section">
+            <h3 class="h3">Project and business requirements</h3>
+            <ul>
+                <li>Allow approved stores to onboard and manage their own loyalty operations.</li>
+                <li>Support invite-only member registration tied to store-issued access codes.</li>
+                <li>Maintain accurate point balances using an auditable transaction ledger.</li>
+                <li>Enable secure point awarding and redemption through QR-based member identification.</li>
+                <li>Provide internal visibility for onboarding requests, leads, user management, and store activity.</li>
+                <li>Protect against abuse through duplicate scan prevention, validation rules, and role-based access control.</li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h3 class="h3">Project plan</h3>
+            <ul>
+                <li>Phase 1: define user roles, loyalty rules, and the invite-only operating model.</li>
+                <li>Phase 2: build the public marketing site and consultation capture flow.</li>
+                <li>Phase 3: implement core Django models, authentication flows, and store onboarding.</li>
+                <li>Phase 4: build member and store dashboards with QR-based point workflows.</li>
+                <li>Phase 5: add admin operations tooling, environment-based security settings, and tests.</li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h3 class="h3">Requirements analysis and design</h3>
+            <p>
+                The system design separates the platform into public marketing, member experience, store operations, and internal admin management. Role checks, transaction safety, and server-side validation were prioritized so the loyalty rules could not be bypassed from the client side, while the interface kept each user type focused on the actions relevant to them.
+            </p>
+        </section>
+
+        <section class="project-section">
+            <h3 class="h3">Wireframes and mockups</h3>
+            <p>
+                The screenshots in the image slider represent the visual planning and final implementation of the product experience, including dashboards, admin views, and loyalty interactions. They act as the mockup and interface evidence for the portfolio presentation of the project.
+            </p>
+        </section>
+
+        <section class="project-section">
+            <h3 class="h3">Status reports</h3>
+            <p>
+                The project reached a working, portfolio-ready state with completed core flows for onboarding, invites, points management, QR identification, admin operations, and automated testing. The current verification state is stable, with all 42 tests passing.
+            </p>
+        </section>
+
+        <section class="project-section">
+            <h3 class="h3">System implementation</h3>
+            <p>
+                The final implementation uses Django 5 with server-rendered templates, SQLite for development, optional PostgreSQL for deployment, vanilla JavaScript for client interactions, and QR image generation through <code>qrcode</code> and Pillow. The application includes operational endpoints, security-oriented environment settings, and a multi-role architecture that supports real business workflows.
+            </p>
+        </section>
+
+        <section class="project-section">
+            <h3 class="h3">Verification</h3>
+            <p>Current test suite passes: 42 tests, all green.</p>
+        </section>
+
+        <section class="project-section">
+            <h3 class="h3">Portfolio-ready project summary</h3>
+            <p>
+                Anexcial is a Django-based invite-only loyalty platform for neighbourhood businesses. I built a multi-role web application that supports member QR identities, store-managed reward catalogs, invite-based onboarding, point awarding and redemption, and a full admin operations hub for managing users, stores, consultation leads, and onboarding approvals. The platform emphasizes trust, anti-fraud controls, and operational visibility through an auditable transaction ledger, role-based access, secure environment-driven settings, and automated test coverage.
+            </p>
+        </section>
+
+        <section class="project-section">
+            <h3 class="h3">Resume-style bullets</h3>
+            <ul>
+                <li>Built a full-stack Django loyalty platform with separate member, store, and admin workflows.</li>
+                <li>Designed an invite-only membership system with usage-limited, expiring invite codes and onboarding review flows.</li>
+                <li>Implemented QR-based member identification and a server-validated points ledger for reward tracking and redemption.</li>
+                <li>Developed internal operations tooling for user and store administration, consultation lead management, and onboarding approvals.</li>
+                <li>Added security and reliability features including rate limiting, duplicate scan protection, environment-based production settings, and automated tests.</li>
+            </ul>
+        </section>
+
+        
+    </article>
+</main>
+
+<script>
+    const slides = document.querySelectorAll("[data-slide]");
+    const dots = document.querySelectorAll("[data-slide-dot]");
+    const status = document.querySelector("[data-slider-status]");
+    const nextButton = document.querySelector("[data-next-slide]");
+    const prevButton = document.querySelector("[data-prev-slide]");
+    let activeSlideIndex = 0;
+
+    function showSlide(index) {
+        activeSlideIndex = (index + slides.length) % slides.length;
+
+        slides.forEach((slide, slideIndex) => {
+            slide.classList.toggle("active", slideIndex === activeSlideIndex);
+        });
+
+        dots.forEach((dot, dotIndex) => {
+            dot.classList.toggle("active", dotIndex === activeSlideIndex);
+        });
+
+        status.textContent = `${activeSlideIndex + 1} / ${slides.length}`;
+    }
+
+    nextButton.addEventListener("click", () => showSlide(activeSlideIndex + 1));
+    prevButton.addEventListener("click", () => showSlide(activeSlideIndex - 1));
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => showSlide(index));
+    });
+
+    setInterval(() => {
+        showSlide(activeSlideIndex + 1);
+    }, 4000);
+</script>
+</body>
+
+</html>

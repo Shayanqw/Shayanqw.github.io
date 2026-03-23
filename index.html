@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vCard - Personal Portfolio</title>
+
+    <!--
+      - favicon
+    -->
+    <link rel="shortcut icon" href="./assets/images/portfoliof.ico" type="image/x-icon" >
+
+    <!--
+      - custom css link
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!--
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!--
+  - #MAIN
+-->
+<main>
+    <!--
+      - #SIDEBAR
+    -->
+    <aside class="sidebar" data-sidebar>
+
+        <div class="sidebar-info">
+
+            <figure class="avatar-box">
+
+                <img src="assets/images/my pic.png" height="200" width="100"/></figure>
+
+            <div class="info-content">
+                <h1 class="name" title="Shayan Pourahmad">Shayan Pourahmad</h1>
+
+                <p class="title">Web developer</p>
+            </div>
+
+            <button class="info_more-btn" data-sidebar-btn>
+                <span>Show Contacts</span>
+
+                <ion-icon name="chevron-down"></ion-icon>
+            </button>
+
+        </div>
+
+        <div class="sidebar-info_more">
+
+            <div class="separator"></div>
+
+            <ul class="contacts-list">
+
+                <li class="contact-item">
+
+                    <div class="icon-box">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">Email</p>
+
+                        <a href="mailto:shayan.pourahmadd@gmail.com" class="contact-link">shayan.pourahmadd@gmail.com</a>
+                    </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                    <div class="icon-box">
+                        <ion-icon name="phone-portrait-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">Phone</p>
+
+                        <a href="tel:+16479853311" class="contact-link">+1 (647) 985-3311</a>
+                    </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                    <div class="icon-box">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">Birthday</p>
+
+                        <time datetime="2001-09-22">September 22, 2001</time>
+                    </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                    <div class="icon-box">
+                        <ion-icon name="location-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">Location</p>
+
+                        <address>Toronto,Canada</address>
+                    </div>
+
+                </li>
+
+            </ul>
+
+            <div class="separator"></div>
+
+            <ul class="social-list">
+
+                <li class="social-item">
+                    <a href="https://github.com/Shayanqw" class="social-link">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                </li>
+
+                <li class="social-item">
+                    <a href="https://www.linkedin.com/in/shayan-pourahmad" class="social-link">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+
+                <li class="social-item">
+                    <a href="https://www.instagram.com/shayan_pourahmad/" class="social-link">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+        <!--
+          - #NAVBAR
+        -->
+
+        <nav class="navbar">
+
+            <ul class="navbar-list">
+
+                <li class="navbar-item">
+                    <button class="navbar-link  active" data-nav-link>About</button>
+                </li>
+
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>Resume</button>
+                </li>
+
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>Portfolio</button>
+                </li>
+
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>Contact</button>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+
+
+
+        <!--
+          - #ABOUT
+        -->
+
+        <article class="about  active" data-page="about">
+
+            <header>
+                <h2 class="h2 article-title">About me</h2>
+            </header>
+
+            <section class="about-text">
+                <p>
+                    I'm Creative Web Developer from Toronto, Canada.<br>
+                    I enjoy turning complex problems into simple, beautiful and intuitive designs.
+                </p>
+
+                <p>
+                    I am a dedicated student at George Brown College,<br> currently pursuing a degree in Computer Programming and Analysis.<br>
+                    My passion lies in web development, where I have honed my skills in HTML, CSS, and JavaScript.<br>
+                    Through my coursework and personal projects, I've gained a solid understanding of these technologies and their applications in creating dynamic and user-friendly websites.<br><br>
+                    I am constantly seeking opportunities to expand my knowledge and refine my craft in the ever-evolving field of web development.
+                </p>
+            </section>
+
+            <section class="service">
+
+                <h3 class="h3 service-title">Professional Summary</h3>
+
+                <div class="content-card" style="cursor: default; padding-top: 20px;">
+                    <p class="service-item-text">
+                        I am a junior developer focused on building practical, user-friendly web applications with strong fundamentals in HTML, CSS, JavaScript, Python, and database-backed development. My portfolio reflects both academic and hands-on project work, with an emphasis on clean interfaces, problem solving, and continuous growth toward full-stack development roles.
+                    </p>
+                </div>
+
+            </section>
+
+            <section class="service">
+
+                <h3 class="h3 service-title">Career Goal Statement</h3>
+
+                <div class="content-card" style="cursor: default; padding-top: 20px;">
+                    <p class="service-item-text">
+                        I believe strong software is created when technical skill, curiosity, and empathy work together. My motivation comes from building tools that solve real problems, simplify experiences, and create value for the people using them. Past academic and professional experiences taught me that I do my best work when I keep learning, communicate clearly, and stay accountable for quality from idea to implementation.
+                    </p>
+
+                    <p class="service-item-text" style="margin-top: 14px;">
+                        My goal is to grow into a full-stack developer who can contribute across product design, application logic, and deployment-ready systems. In the future, I want to help teams build reliable software that is both technically solid and genuinely useful, while continuing to deepen my skills in web development, backend engineering, and product thinking.
+                    </p>
+                </div>
+
+            </section>
+
+
+            <!--
+              - service
+            -->
+
+            <section class="service">
+
+                <h3 class="h3 service-title">What i'm doing</h3>
+
+                <ul class="service-list">
+
+                    <li class="service-item">
+
+                        <div class="service-icon-box">
+                            <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+                        </div>
+
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">Web design</h4>
+
+                            <p class="service-item-text">
+                                well-versed in web design tools such as Figma and Canva,<br>
+                                leveraging them to create visually appealing and user-friendly digital experiences.
+                            </p>
+                        </div>
+
+                    </li>
+
+                    <li class="service-item">
+
+                        <div class="service-icon-box">
+                            <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                        </div>
+
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">Web Development</h4>
+
+                            <p class="service-item-text">
+                                hands-on experience with HTML, CSS, and JavaScript, utilizing these skills to craft
+                                captivating and dynamic websites.
+                            </p>
+                        </div>
+
+                    </li>
+
+                    <li class="service-item">
+
+                        <div class="service-icon-box">
+                            <img src="assets/images/software.svg" alt="Web development icon" width="60">
+
+                        </div>
+
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">Software Development</h4>
+
+                            <p class="service-item-text">
+                                proficient in Python and currently expanding my skillset by delving into C#.
+                            </p>
+                        </div>
+
+                    </li>
+
+                    <li class="service-item">
+
+                        <div class="service-icon-box">
+                            <img src="assets/images/study.svg" alt="Software development icon" width="60">
+                        </div>
+
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">Student</h4>
+
+                            <p class="service-item-text">
+                                currently enrolled in George Brown College's Computer Programming and Analysis program,<br>
+                                where I'm honing my skills and knowledge in the field.
+                            </p>
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+
+            <!--
+              - testimonials modal
+            -->
+
+            <div class="modal-container" data-modal-container>
+
+                <div class="overlay" data-overlay></div>
+            <!-- im gonna add testimonials later               -->
+
+                <section class="testimonials-modal">
+
+                    <button class="modal-close-btn" data-modal-close-btn>
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                </section>
+
+            </div>
+
+        </article>
+
+
+
+        <!--
+          - #RESUME
+        -->
+
+        <article class="resume" data-page="resume">
+
+            <header>
+                <h2 class="h2 article-title">Resume</h2>
+            </header>
+
+            <section class="timeline">
+
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <ion-icon name="book-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3">Education</h3>
+                </div>
+
+                <ol class="timeline-list">
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">George Brown College</h4>
+
+                        <span>2023 — 2026</span>
+
+                        <p class="timeline-text">
+                            Computer Programming and Analysis
+                            <br>
+                            C# - HTML,CSS, Java Script - Linux - My SQL</p>
+
+                    </li>
+
+
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Coursera Certificate from Johns Hopkins University</h4>
+                        <p class="timeline-text">
+                            HTML, CSS, and Javascript for Web Developers
+                        </p>
+
+                    </li>
+
+                </ol>
+
+            </section>
+
+            <section class="timeline">
+
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <ion-icon name="school-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3">Academic Credentials</h3>
+                </div>
+
+                <ol class="timeline-list">
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Computer Programming and Analysis Diploma</h4>
+
+                        <span>George Brown College</span>
+
+                        <p class="timeline-text">
+                            Current academic program focused on programming, software development, web technologies, databases, and systems analysis.
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Certificates and Recognition</h4>
+
+                        <p class="timeline-text">
+                            Coursera Certificate from Johns Hopkins University in HTML, CSS, and Javascript for Web Developers.
+                        </p>
+
+                    </li>
+
+                </ol>
+
+            </section>
+
+            <section class="timeline">
+
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <ion-icon name="book-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3">Experience</h3>
+                </div>
+
+                <ol class="timeline-list">
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Web Developer</h4>
+                        <p class="timeline-text">FTD(Future Technology Developers)</p>
+
+
+                        <span>2022 — March 2023</span>
+
+                        <p class="timeline-text">
+                            •	Created and maintained websites, focusing on web development.<br>
+                            •	Developed databases and optimized user services.
+                            •	Completed over 20 successful projects showcasing diverse skills.
+
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Computer Technician</h4>
+                        <p class="timeline-text">Toos Arax</p>
+
+                        <span>2020 — 2022</span>
+
+                        <p class="timeline-text">
+                            •	Assembled computers with meticulous attention to detail.<br>
+                            •	Proficient in hardware configuration and setup.<br>
+                            •	Diagnosed and resolved various software issues.
+
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Library Manager</h4>
+                        <p class="timeline-text"> Zist Kavoush</p>
+
+                        <span>2019 — 2020</span>
+
+                        <p class="timeline-text">
+                            •	Led collection development and evaluation efforts.<br>
+                            •	Provided user services and managed technology/systems.
+
+                        </p>
+
+                    </li>
+
+                </ol>
+
+            </section>
+
+            <section class="skill">
+
+                <h3 class="h3 skills-title">My skills</h3>
+
+                <ul class="skills-list content-card">
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">Web Development</h5>
+                            <data value="70">70%</data>
+                        </div>
+
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 70%;"></div>
+                        </div>
+
+                    </li>
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">Software Development</h5>
+                            <data value="60">60%</data>
+                        </div>
+
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 60%;"></div>
+                        </div>
+
+                    </li>
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">Graphic Design</h5>
+                            <data value="60">60%</data>
+                        </div>
+
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 60%;"></div>
+                        </div>
+
+                    </li>
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">Team-Work</h5>
+                            <data value="90">90%</data>
+                        </div>
+
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 90%;"></div>
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <section class="timeline">
+
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <ion-icon name="document-text-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3">Cover Letter Sample</h3>
+                </div>
+
+                <ol class="timeline-list">
+
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Target Role: Junior Web Developer / Full-Stack Developer</h4>
+
+                        <p class="timeline-text">
+                            Dear Hiring Manager,
+                            <br><br>
+                            I am excited to apply for a junior web developer opportunity where I can contribute strong front-end fundamentals, growing backend experience, and a genuine passion for building useful digital products. Through my academic training at George Brown College and my hands-on project work, I have developed experience with HTML, CSS, JavaScript, Python, and database-supported application development.
+                            <br><br>
+                            My portfolio includes academic, personal, and full-stack projects that demonstrate problem solving, UI design, and application structure. I enjoy turning ideas into polished user experiences and I am especially motivated by opportunities where I can keep learning while contributing to a collaborative development team.
+                            <br><br>
+                            Thank you for your time and consideration. I would welcome the opportunity to discuss how my technical skills, work ethic, and growth mindset can support your team.
+                        </p>
+                    </li>
+
+                </ol>
+
+            </section>
+
+            <section class="timeline">
+
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <ion-icon name="briefcase-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3">Portfolio Alignment</h3>
+                </div>
+
+                <ol class="timeline-list">
+
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Academic Work Samples</h4>
+                        <p class="timeline-text">
+                            The portfolio section includes 5 project samples: Unit Convertor Software, GBC Event, Calculator, BluBit, and Anexcial.
+                        </p>
+                    </li>
+
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Capstone Project Documentation</h4>
+                        <p class="timeline-text">
+                            Anexcial serves as the featured capstone-style project, with a dedicated page covering summary, vision, requirements, planning, analysis, mockups context, status, and implementation details.
+                        </p>
+                    </li>
+
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Submission Checklist</h4>
+                        <p class="timeline-text">
+                            This portfolio is self-executable as a static website. For final submission, include the hosted URL, your video demo link, and your GitHub repository link with the assignment upload.
+                        </p>
+                    </li>
+
+                </ol>
+
+            </section>
+
+        </article>
+
+
+
+
+
+        <!--
+          - #PORTFOLIO
+        -->
+
+        <article class="portfolio" data-page="portfolio">
+
+            <header>
+                <h2 class="h2 article-title">Portfolio</h2>
+            </header>
+
+            <section class="projects">
+
+                <ul class="filter-list">
+
+                    <li class="filter-item">
+                        <button class="active" data-filter-btn>All</button>
+                    </li>
+
+                    <li class="filter-item">
+                        <button data-filter-btn>Web design</button>
+                    </li>
+
+                    <li class="filter-item">
+                        <button data-filter-btn>Applications</button>
+                    </li>
+
+                    <li class="filter-item">
+                        <button data-filter-btn>Web development</button>
+                    </li>
+
+                </ul>
+
+                <div class="filter-select-box">
+
+                    <button class="filter-select" data-select>
+
+                        <div class="select-value" data-selecct-value>Select category</div>
+
+                        <div class="select-icon">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </div>
+
+                    </button>
+
+                    <ul class="select-list">
+
+                        <li class="select-item">
+                            <button data-select-item>All</button>
+                        </li>
+
+                        <li class="select-item">
+                            <button data-select-item>Web design</button>
+                        </li>
+
+                        <li class="select-item">
+                            <button data-select-item>Applications</button>
+                        </li>
+
+                        <li class="select-item">
+                            <button data-select-item>Web development</button>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <ul class="project-list">
+
+                    <li class="project-item  active" data-filter-item data-category="applications">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+                                <img src="assets/images/Unit Converter by SHAYAN.png" width="625"  alt="finance" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title"> Unit Convertor software </h3>
+
+                            <p class="project-category">Applications</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web development">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="assets/images/GBC Event1.png" height="929" width="1407" alt="George Brown College Event" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title"> GBC Event </h3>
+
+                            <p class="project-category">Web development</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web design">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="assets/images/Calculator Light_Dark1.png" alt="calculator" loading="lazy"/>
+                            </figure>
+
+                            <h3 class="project-title">Calculator</h3>
+
+                            <p class="project-category">Web design</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web development">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+                                <img src="assets/images/BluBit website.png" alt="BluBit" loading="lazy"/>
+
+                            </figure>
+
+                            <h3 class="project-title">BluBit</h3>
+
+                            <p class="project-category">web development</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item active" data-filter-item data-category="web development">
+                        <a href="Anexcial.html">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+                                <img src="assets/images/Anexcial1.png" alt="Anexcial loyalty platform" loading="lazy"/>
+                            </figure>
+
+                            <h3 class="project-title">Anexcial</h3>
+
+                            <p class="project-category">Web development</p>
+
+                        </a>
+                    </li>
+
+                    <!--<li class="project-item  active" data-filter-item data-category="web design">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">DSM.</h3>
+
+                            <p class="project-category">Web design</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web design">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">MetaSpark</h3>
+
+                            <p class="project-category">Web design</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web development">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Summary</h3>
+
+                            <p class="project-category">Web development</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="applications">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Task Manager</h3>
+
+                            <p class="project-category">Applications</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web development">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Arrival</h3>
+
+                            <p class="project-category">Web development</p>
+
+                        </a>
+                    </li>
+-->
+                </ul>
+
+            </section>
+
+        </article>
+
+
+
+
+
+
+
+
+
+
+
+        <!--
+          - #CONTACT
+        -->
+
+        <article class="contact" data-page="contact">
+
+            <header>
+                <h2 class="h2 article-title">Contact</h2>
+            </header>
+
+            <section class="mapbox" data-mapbox>
+                <figure>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184551.9097722362!2d-79.54286721997676!3d43.7183709582053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON!5e0!3m2!1sen!2sca!4v1707757356761!5m2!1sen!2sca"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </figure>
+            </section>
+
+            <section class="contact-form">
+
+                <h3 class="h3 form-title">Contact Form</h3>
+
+                <form action="#" class="form" data-form>
+
+                    <div class="input-wrapper">
+                        <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+                        <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+                    </div>
+
+                    <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+                    <button class="form-btn" type="submit" disabled data-form-btn>
+                        <ion-icon name="paper-plane"></ion-icon>
+                        <span>Send Message</span>
+                    </button>
+
+                </form>
+
+            </section>
+
+        </article>
+
+    </div>
+
+</main>
+
+
+
+
+
+
+<!--
+  - custom js link
+-->
+<script src="./assets/js/script.js"></script>
+
+<!--
+  - ionicon link
+-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
+</body>
+</html>

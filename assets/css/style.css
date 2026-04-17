@@ -2032,6 +2032,20 @@ textarea.form-input::-webkit-resizer { display: none; }
   margin-top: 12px;
 }
 
+.document-card-with-preview {
+  display: flex;
+  flex-direction: column;
+}
+
+.document-preview {
+  border: 1px solid var(--jet);
+  border-radius: 14px;
+  display: block;
+  margin-top: 16px;
+  max-width: 100%;
+  width: 100%;
+}
+
 .contact-panel {
   margin-bottom: 30px;
 }

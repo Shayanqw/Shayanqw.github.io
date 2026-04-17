@@ -1905,6 +1905,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 .skills-grid {
   display: grid;
   gap: 20px;
+  align-items: stretch;
 }
 
 .rubric-summary,
@@ -1920,7 +1921,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 .contact-card,
 .profile-statement-card {
   cursor: default;
-  padding-top: 24px;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
 .rubric-label {
@@ -2032,9 +2034,14 @@ textarea.form-input::-webkit-resizer { display: none; }
   margin-top: 12px;
 }
 
+.document-card {
+  height: 100%;
+}
+
 .document-card-with-preview {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 .document-preview {
@@ -2042,8 +2049,18 @@ textarea.form-input::-webkit-resizer { display: none; }
   border-radius: 14px;
   display: block;
   margin-top: 16px;
+  object-fit: cover;
   max-width: 100%;
   width: 100%;
+}
+
+.document-card .timeline-text {
+  margin-bottom: 0;
+}
+
+.document-card .text-link {
+  margin-top: auto;
+  padding-top: 14px;
 }
 
 .contact-panel {
